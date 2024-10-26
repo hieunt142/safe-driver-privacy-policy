@@ -38,7 +38,7 @@
   </head>
   <body class="text-blueGray-700 antialiased">
     <nav
-      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg"
+      class="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white shadow"
     >
       <div
         class="container px-4 mx-auto flex flex-wrap items-center justify-between"
@@ -47,15 +47,15 @@
           class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
         >
           <a
-            class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-            href="../public/index.html"
+            class="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+            href="./index.html"
             >Thành Nhân Việt</a
           ><button
             class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
             type="button"
             onclick="toggleNavbar('example-collapse-navbar')"
           >
-            <i class="text-white fas fa-bars"></i>
+            <i class="fas fa-bars"></i>
           </button>
         </div>
         <div
@@ -67,7 +67,7 @@
           >
             <li class="inline-block relative">
               <a
-                class="hover:text-blueGray-500 text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                class="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 href="#pablo"
                 onclick="openDropdown(event,'demo-pages-dropdown')"
               >
@@ -79,19 +79,19 @@
               >
                 
                 <a
-                  href="terms.html"
+                  href="../pages/terms.html"
                   class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
                 >
                   Điều khoản sử dụng
                 </a>
                 <a
-                  href="privacy.html"
+                  href="../pages/privacy.html"
                   class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
                 >
                   Chính sách bảo mật
                 </a>
                 <a
-                  href="profile.html"
+                  href="../pages/profile.html"
                   class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
                 >
                   X88Lab
@@ -102,101 +102,48 @@
         </div>
       </div>
     </nav>
-    <main class="profile-page">
-      <section class="relative block h-500-px">
-        <div
-          class="absolute top-0 w-full h-full bg-center bg-cover"
-          style="
-            background-image: url('https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2710&amp;q=80');
-          "
-        >
-          <span
-            id="blackOverlay"
-            class="w-full h-full absolute opacity-50 bg-black"
-          ></span>
-        </div>
-        <div
-          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
-          style="transform: translateZ(0px)"
-        >
-          <svg
-            class="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon
-              class="text-blueGray-200 fill-current"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
-          </svg>
-        </div>
-      </section>
-      <section class="relative py-16 bg-blueGray-200">
-        <div class="container mx-auto px-4">
-          <div
-            class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64"
-          >
-            <div class="px-6">
-              <div class="flex flex-wrap justify-center">
-                <div
-                  class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center"
-                >
-                  <div class="relative">
-                    <img
-                      alt="..."
-                      src="../assets/img/x88lab_logo.png"
-                      class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center"
-                >
-                  <div class="py-6 px-3 mt-32 sm:mt-0">
-                    
-                  </div>
-                </div>
-                <div class="w-full lg:w-4/12 px-4 lg:order-1">
-                  <div class="flex justify-center py-4 lg:pt-4 pt-8">
-                    
-                  </div>
-                </div>
-              </div>
-              <div class="text-center mt-12">
-                <h3
-                  class="text-4xl font-semibold leading-normal text-blueGray-700 mb-2"
-                >
-                  X88Lab Team
-                </h3>
-                <div
-                  class="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase"
-                >
-                  <i
-                    class="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"
-                  ></i>
-                  Da Nang, Vietnam
-                </div>
-                
-              </div>
-              <div class="mt-10 py-10 border-t border-blueGray-200 text-center">
-                <div class="flex flex-wrap justify-center">
-                  <div class="w-full lg:w-9/12 px-4">
-                    <p class="mb-4 text-lg leading-relaxed text-blueGray-700">
-                      X88Lab, với nhiều năm kinh nghiệm, chúng tôi đã đồng hành cùng hàng trăm doanh nghiệp nhỏ và vừa, giúp họ tối ưu hóa quy trình kinh doanh, nâng cao hiệu quả hoạt động và mở rộng thị trường. Đội ngũ chuyên gia của X88Lab sở hữu kiến thức sâu rộng về các công nghệ mới nhất như .NET, React, AI, cùng với sự sáng tạo không ngừng, chúng tôi cam kết mang đến những giải pháp công nghệ đột phá, đáp ứng mọi nhu cầu của khách hàng.
-                    </p>
-                    
-                  </div>
-                </div>
-              </div>
+    <section
+      class="header relative pt-16 items-center flex h-screen max-h-860-px"
+    >
+      <div class="container mx-auto items-center flex flex-wrap">
+        <div class="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
+          <div class="pt-32 sm:pt-0">
+            <h2 class="font-semibold text-4xl text-blueGray-600">
+              Thành Nhân Việt - Đồng hành cùng bạn trên mọi hành trình!
+            </h2>
+            <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
+              Chúng tôi cung cấp dịch vụ đón và đưa tận nơi, đảm bảo bạn luôn về đến nhà an toàn sau khi kết nối và giao lưu với khách hàng. Hãy để Thành Nhân Việt giúp bạn tận hưởng công việc mà không phải lo lắng về việc di chuyển!
+            </p>
+            <div class="mt-12">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.xlab.tnv.safe_driver"
+                target="_blank"
+                class="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-pink-500 active:bg-pink-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+              >
+                Tải cho Android
+              </a>
+              <a
+                href="https://apps.apple.com/us/app/thành-nhân-việt/id1587914694"
+                class="github-star ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+                target="_blank"
+              >
+                Tải cho iOS
+              </a>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+      <div class="hidden md:flex md:visible absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px justify-center items-center shrink-0">
+        <img
+          class="hidden md:flex md:visible w-6/12 h-96 object-contain mb-3 mt-3"
+          src="../assets/img/ill_header_5.png"
+          alt="..."
+        />
+      </div>
+      
+    </section>
+
+    
     <footer class="relative bg-blueGray-200 pt-8 pb-6">
       <div
         class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
@@ -263,7 +210,7 @@
                   <li>
                     <a
                       class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="profile.html"
+                      href="../pages/profile.html"
                     >
                       X88Lab
                     </a>
@@ -282,7 +229,7 @@
                   <li>
                     <a
                       class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="./terms.html"
+                      href="../pages/terms.html"
                     >
                       Điều khoản sử dụng
                     </a>
@@ -290,7 +237,7 @@
                   <li>
                     <a
                       class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                      href="./privacy.html"
+                      href="../pages/privacy.html"
                     >
                       Chính sách bảo mật
                     </a>
